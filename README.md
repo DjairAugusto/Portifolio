@@ -1,10 +1,12 @@
+
 # Portfólio - Projeto de Software Lab 1
 
-# Integrantes do Projeto
+## Integrantes do Projeto
 - Djair Augusto Galdino Soares
 - Guilherme de Almeida Santos
 - Guilherme Henrique Siqueira de Lana
 - Pedro Rodrigues Duarte
+
 ## Descrição do Projeto
 Este projeto é uma **Single Page Application (SPA)** desenvolvida para apresentar um portfólio profissional, integrando um back-end em **Node.js** para gerenciamento de dados.  
 O site reúne informações sobre experiências e projetos realizados, além de oferecer um canal de contato direto.  
@@ -43,7 +45,7 @@ Histórico profissional e acadêmico, destacando funções, responsabilidades e 
 
 ### Contato
 ![Contato](./assets/prototipo-contato.jpeg)  
-Área dedicada exclusivamente a botões de acesso rápido para.
+Área dedicada exclusivamente a botões de acesso rápido para contato.
 
 ### Wire completa
 ![Wire](./assets/wire.jpeg) 
@@ -52,7 +54,7 @@ Histórico profissional e acadêmico, destacando funções, responsabilidades e 
 
 ## Estrutura Atual do Projeto
 ```plaintext
-📦 Projeto-portifolio
+📦 Portifolio
 ├── src
 │   ├── back
 │   │   ├── README.md
@@ -67,4 +69,12 @@ Histórico profissional e acadêmico, destacando funções, responsabilidades e 
 └── README.md
 ```
 
-O front-end agora utiliza Vite e está localizado em `src/front`. O back-end está em `src/back`.
+O front-end utiliza Vite e está localizado em `src/front`. O back-end está em `src/back`.
+
+---
+
+## Deploy
+
+O deploy do projeto foi realizado na plataforma **Render**.
+
+🔗 [Acesse o portfólio online](https://portifolio-1-oa8s.onrender.com)
