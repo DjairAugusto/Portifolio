@@ -14,6 +14,7 @@ export interface Translations {
   about: {
     title: string;
     description: string;
+    skillsTitle?: string;
   };
   experience: {
     title: string;

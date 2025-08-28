@@ -17,6 +17,7 @@ const ptTranslations: Translations = {
     title: "SOBRE MIM",
     description:
       "Sou o Djair Augusto, estudante de Engenharia de Software na PUC Minas, com foco em desenvolvimento Front-end, dados e metodologias ágeis. Tenho experiência com ferramentas como Git, Power BI, SQL e Docker, além de projetos envolvendo React, Spring e UX/UI.\n\nFora da programação, curto arte digital e sou bem eclético nas minhas referências. Na trilha sonora, o destaque fica pro indie rock.",
+    skillsTitle: "HABILIDADES",
   },
   experience: {
     title: "EXPERIÊNCIAS",
@@ -67,6 +68,7 @@ const enTranslations: Translations = {
     title: "ABOUT ME",
     description:
       "I'm Djair Augusto, a Software Engineering student at PUC Minas, focused on Front-end development, data, and agile methodologies. I have experience with tools such as Git, Power BI, SQL, and Docker, as well as projects involving React, Spring, and UX/UI.\n\nOutside programming, I enjoy digital art and have eclectic references. For the soundtrack, indie rock stands out.",
+    skillsTitle: "SKILLS",
   },
   experience: {
     title: "EXPERIENCE",
