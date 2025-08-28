@@ -1,0 +1,158 @@
+#projects {
+  background-color: #212121;
+  padding: 60px 20px;
+  text-align: center;
+  color: #dad9d7;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 60px auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.timeline-center-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #dad9d7;
+  transition: height 0.5s cubic-bezier(.4,0,.2,1);
+  z-index: 0;
+}
+
+.timeline-step {
+  width: 45%;
+  background-color: #232323;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.timeline-step.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-step.right {
+  left: 55%;
+  text-align: left;
+}
+
+.timeline-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #dad9d7;
+}
+
+.timeline-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.timeline-button {
+  margin-top: 40px;
+  padding: 12px 28px;
+  border: none;
+  background-color: #dad9d7;
+  color: #212121;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.timeline-button:hover {
+  background-color: #dad9d7;
+  color: #212121;
+}
+
+.project-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.lang-tag {
+  margin-bottom: 8px;
+  background: none;
+  color: #dad9d7;
+  border-radius: 0;
+  padding: 0 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  border: none;
+}
+
+.timeline-step h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 16px 0 8px 0;
+  color: #dad9d7;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .timeline-step {
+    width: 98vw;
+    left: 0 !important;
+    text-align: center !important;
+    margin: 20px auto;
+    padding: 12px 4px;
+  }
+  .timeline-container {
+    max-width: 100vw;
+    padding: 0 2vw;
+  }
+  .timeline-image {
+    height: 120px;
+    max-width: 90vw;
+  }
+  .timeline-year {
+    font-size: 1.1rem;
+  }
+  .timeline-step h3 {
+    font-size: 1.3rem;
+  }
+  .project-languages {
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timeline-step {
+    padding: 8px 2px;
+  }
+  .timeline-image {
+    height: 80px;
+    max-width: 98vw;
+  }
+  .timeline-step h3 {
+    font-size: 1.1rem;
+  }
+}

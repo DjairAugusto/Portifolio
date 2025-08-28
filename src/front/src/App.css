@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #212121;
+  color: #dad9d7;
+}
+
+.App {
+  text-align: left;
+}
+
+main {
+  /* This ensures the content starts below the fixed header */
+  padding-top: 80px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Common section styling */
+.section {
+  padding: 80px 5%;
+  /* Use percentage for better responsiveness */
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 2px solid #232323;
+  background-color: #242424;
+}
+
+/* Fade in wrapper styles */
+.fade-in-wrapper {
+  will-change: opacity, transform;
+}
+
+/* Smooth scroll behavior for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize animations for better performance */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure smooth animations on all devices */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-wrapper {
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+}
+
+/* Fallback for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-wrapper {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 60px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+  }
+  .App {
+    padding: 0 2vw;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  .App {
+    padding: 0 1vw;
+  }
+}
