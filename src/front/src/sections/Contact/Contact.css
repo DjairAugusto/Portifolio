@@ -1,3 +1,62 @@
+/* Estilo para o popup do formulário de contato */
+.contact-popup {
+  background: #232323;
+  padding: 32px 24px;
+  max-width: 480px;
+  width: 100%;
+  margin: 80px auto;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+  border-radius: 0;
+  position: relative;
+  z-index: 1001;
+}
+.contact-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+/* Wrapper flexível para contato */
+.contact-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  width: 100%;
+}
+.contact-left {
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding-right: 8px;
+}
+.contact-left h2 {
+  margin-bottom: 18px;
+}
+.contact-list {
+  margin-top: 0;
+}
+.contact-right {
+  flex: 1 1 0;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 8px;
+}
 .contact-section {
   background-color: #181818;
   color: #f0f0f0;
@@ -9,15 +68,13 @@
   margin-bottom: 20px;
 }
 
-.contact-content-wrapper {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+/* Removido: substituído por .contact-flex-wrapper */
 
 .contact-list {
-  flex: 1; /* Coluna da esquerda, menos espaço */
+  flex: 1 1 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 0;
 }
 
 .contact-list li {
@@ -39,14 +96,15 @@
 }
 
 .contact-form {
-  flex: 1;
-  max-width: 340px;
-  margin-left: auto;
+  flex: 1 1 0;
+  max-width: 800px;
+  width: 100%;
+  margin-left: 0;
   margin-right: 0;
-  background: linear-gradient(135deg, #232323 60%, #181818 100%);
-  border-radius: 16px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.18);
-  padding: 24px 18px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,23 +112,30 @@
 
 .contact-form input,
 .contact-form textarea {
-  padding: 12px 14px;
-  border-radius: 8px;
-  background-color: #232323;
-  border: 1.5px solid #333;
+  padding: 8px 16px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 1px solid #dad9d7;
   color: #dad9d7;
   font-size: 1rem;
   font-family: inherit;
   width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   transition: border-color 0.3s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: none;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #1da1f2;
+  gap: 14px;
+  background: #232323;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto 24px auto;
+  box-shadow: 0px 2px 12px rgba(0,0,0,0.12);
 }
 
 .contact-form input::placeholder,
@@ -80,11 +145,33 @@
 }
 
 .contact-form button {
-  background: linear-gradient(90deg, #1da1f2 60%, #0d8ddb 100%);
-  color: white;
+  background: #dad9d7;
+  color: #212121;
   border: none;
-  padding: 12px 0;
-  border-radius: 8px;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+.contact-form button:disabled {
+  background: #aaa;
+  color: #212121;
+  cursor: not-allowed;
+}
+.contact-success {
+  color: #6db33f;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.contact-error {
+  color: #e44d26;
+  font-weight: bold;
+  margin-top: 8px;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.08rem;
@@ -108,11 +195,12 @@
 }
 
 @media (max-width: 768px) {
-  .contact-content-wrapper {
+  .contact-flex-wrapper {
     flex-direction: column;
     gap: 18px;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   .contact-section {
     padding: 24px 8px;
@@ -120,10 +208,12 @@
   .contact-form {
     max-width: 100vw;
     padding: 16px 4px;
+    align-items: center;
   }
   .contact-list {
     width: 100vw;
     margin-bottom: 12px;
+    align-items: center;
   }
   .contact-list li {
     gap: 10px;

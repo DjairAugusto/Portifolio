@@ -141,15 +141,7 @@
       margin: 0 auto;
       display: block;
     }
-    .about-content {
-      position: relative;
-      display: flex;
-      align-items: flex-start;
-      gap: 24px;
-      max-width: 1100px;
-      justify-content: space-between;
-    }
-    }
+  /* Removido bloco duplicado e chave extra */
     .about-skills-title {
       font-size: 1rem;
     }
@@ -170,6 +162,7 @@
       display: block;
       align-self: center;
     }
+    .about-content p {
       padding: 0 4px;
     }
     .about-skills-inline {
