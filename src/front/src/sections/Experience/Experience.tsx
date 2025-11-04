@@ -5,6 +5,7 @@ import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator, SiAdobepho
 import DesignerLogo from '../../assets/desginerlogo.png';
 import pucminasLogo from "../../assets/pucminaslog.jpg";
 import drvetLogo from "../../assets/drvetlogo.png";
+import dtiLogo from "../../assets/dti.jpg";
 
 // Ajuste o tipo Technology para usar React.ReactNode
 export type Technology = {
@@ -73,19 +74,24 @@ function Experience() {
   const experiences = language === "en"
     ? [
         {
-          company: "Freelancer",
-          role: "Graphic Designer",
-          period: "2022 - 2023",
+          company: "DTI Digital",
+          role: "Product Owner Intern",
+          period: "October 2025 - Present",
           description:
-            "I worked as a freelance graphic designer, creating logos, visual identities, and 3D modeling for various clients and projects. My experience includes developing visual concepts aligned with brand identity and delivering final materials in optimized digital formats. I also worked with editing and modeling software (such as Photoshop, Illustrator, and Blender), exploring creative solutions for visual communication and branding.",
+            "Support to the Product Owner (PO) in managing, prioritizing, and refining the Product Backlog. Responsible for assisting in the creation of User Stories and acceptance criteria, facilitating communication and alignment between the PO and the development team during agile rituals.",
+          technologies: [],
+          image: dtiLogo,
+        },
+        {
+          company: "Siematec Informática",
+          role: "Customer Support Intern",
+          period: "February 2025 - August 2025",
+          description:
+            "I work as a customer support intern for one of the most complete veterinary management systems in Brazil. My activities include direct customer service, requirements gathering, and monitoring system improvements, ensuring efficient platform use and contributing to the product's continuous evolution.",
           technologies: [
-            { name: "Adobe After Effects", icon: <SiAdobeaftereffects style={{ color: '#D291FF' }} /> },
-            { name: "Sony Vegas", icon: <SiAdobepremierepro style={{ color: '#1A1A1A' }} /> },
-            { name: "Adobe Illustrator", icon: <SiAdobeillustrator style={{ color: '#FF9A00' }} /> },
-            { name: "Photoshop", icon: <SiAdobephotoshop style={{ color: '#31A8FF' }} /> },
-            { name: "Krita", icon: <SiKrita style={{ color: '#3C87C3' }} /> }
+            { name: "Mirio" }
           ],
-          image: DesignerLogo
+          image: drvetLogo,
         },
         {
           company: "PUC MINAS - PROEX",
@@ -100,24 +106,11 @@ function Experience() {
           image: pucminasLogo,
         },
         {
-          company: "Siematec Informática",
-          role: "Customer Support Intern",
-          period: "2025 - Present",
-          description:
-            "I work as a customer support intern for one of the most complete veterinary management systems in Brazil. My activities include direct customer service, requirements gathering, and monitoring system improvements, ensuring efficient platform use and contributing to the product's continuous evolution.",
-          technologies: [
-            { name: "Mirio" }
-          ],
-          image: drvetLogo,
-        },
-      ]
-    : [
-        {
-          company: "Free Lancer",
-          role: "Designer Gráfico",
+          company: "Freelancer",
+          role: "Graphic Designer",
           period: "2022 - 2023",
           description:
-            "Atuei como freelancer em design gráfico, desenvolvendo logotipos, identidades visuais e modelagem 3D para diferentes tipos de clientes e projetos. Minha experiência inclui desde a criação de conceitos visuais alinhados à identidade da marca até a entrega final dos materiais em formatos digitais otimizados. Também trabalhei com softwares de edição e modelagem (como Photoshop, Illustrator e Blender), explorando soluções criativas para comunicação visual e branding.",
+            "I worked as a freelance graphic designer, creating logos, visual identities, and 3D modeling for various clients and projects. My experience includes developing visual concepts aligned with brand identity and delivering final materials in optimized digital formats. I also worked with editing and modeling software (such as Photoshop, Illustrator, and Blender), exploring creative solutions for visual communication and branding.",
           technologies: [
             { name: "Adobe After Effects", icon: <SiAdobeaftereffects style={{ color: '#D291FF' }} /> },
             { name: "Sony Vegas", icon: <SiAdobepremierepro style={{ color: '#1A1A1A' }} /> },
@@ -126,6 +119,28 @@ function Experience() {
             { name: "Krita", icon: <SiKrita style={{ color: '#3C87C3' }} /> }
           ],
           image: DesignerLogo
+        },
+      ]
+    : [
+        {
+          company: "DTI Digital",
+          role: "Estagiário de Product Owner",
+          period: "Outubro 2025 - Presente",
+          description:
+            "Apoio ao Product Owner (PO) na gestão, priorização e refinamento do Product Backlog. Responsável por auxiliar na criação de User Stories e critérios de aceite, facilitando a comunicação e o alinhamento entre o PO e o time de desenvolvimento nos rituais ágeis.",
+          technologies: [],
+          image: dtiLogo,
+        },
+        {
+          company: "Siematec Informática",
+          role: "Estagiário de suporte ao cliente",
+          period: "Fevereiro 2025 - Agosto 2025",
+          description:
+            "Atuo como estagiário de suporte ao cliente em um dos sistemas de gestão veterinária mais completos do Brasil. Minhas atividades incluem o atendimento direto aos clientes, o levantamento de requisitos e o acompanhamento de melhorias no sistema, garantindo eficiência no uso da plataforma e contribuindo para a evolução contínua do produto.",
+          technologies: [
+            { name: "Mirio" }
+          ],
+          image: drvetLogo,
         },
         {
           company: "PUC MINAS - PROEX",
@@ -140,15 +155,19 @@ function Experience() {
           image: pucminasLogo,
         },
         {
-          company: "Siematec Informática",
-          role: "Estagiário de suporte ao cliente",
-          period: "2025 - Presente",
+          company: "Free Lancer",
+          role: "Designer Gráfico",
+          period: "2022 - 2023",
           description:
-            "Atuo como estagiário de suporte ao cliente em um dos sistemas de gestão veterinária mais completos do Brasil. Minhas atividades incluem o atendimento direto aos clientes, o levantamento de requisitos e o acompanhamento de melhorias no sistema, garantindo eficiência no uso da plataforma e contribuindo para a evolução contínua do produto.",
+            "Atuei como freelancer em design gráfico, desenvolvendo logotipos, identidades visuais e modelagem 3D para diferentes tipos de clientes e projetos. Minha experiência inclui desde a criação de conceitos visuais alinhados à identidade da marca até a entrega final dos materiais em formatos digitais otimizados. Também trabalhei com softwares de edição e modelagem (como Photoshop, Illustrator e Blender), explorando soluções criativas para comunicação visual e branding.",
           technologies: [
-            { name: "Mirio" }
+            { name: "Adobe After Effects", icon: <SiAdobeaftereffects style={{ color: '#D291FF' }} /> },
+            { name: "Sony Vegas", icon: <SiAdobepremierepro style={{ color: '#1A1A1A' }} /> },
+            { name: "Adobe Illustrator", icon: <SiAdobeillustrator style={{ color: '#FF9A00' }} /> },
+            { name: "Photoshop", icon: <SiAdobephotoshop style={{ color: '#31A8FF' }} /> },
+            { name: "Krita", icon: <SiKrita style={{ color: '#3C87C3' }} /> }
           ],
-          image: drvetLogo,
+          image: DesignerLogo
         },
       ];
 
